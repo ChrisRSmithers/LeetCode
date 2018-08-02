@@ -1,8 +1,14 @@
 ﻿using Xunit;
+using Xunit.Abstractions;
 using LeetCodeSolutions;
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Linq;
 
 namespace LeetCodeTests
 {
+
     public class Problem391Test
     {
         [Fact]
@@ -18,7 +24,8 @@ namespace LeetCodeTests
             };
 
             //Act
-            bool result = Problem391.Solve(rectangles);
+            Problem391 Problem391Solution = new Problem391(rectangles);
+            bool result = Problem391Solution.Solve();
 
             //Assert
             Assert.True(result);
@@ -40,10 +47,11 @@ namespace LeetCodeTests
             };
 
             //Act
-            bool result = Problem391.Solve(rectangles);
+            Problem391 Problem391Solution = new Problem391(rectangles);
+            bool result = Problem391Solution.Solve();
 
             //Assert
-            Assert.True(Problem391.Solve(rectangles));
+            Assert.True(result);
         }
 
         [Fact]
@@ -56,7 +64,8 @@ namespace LeetCodeTests
             };
 
             //Act
-            bool result = Problem391.Solve(rectangles);
+            Problem391 Problem391Solution = new Problem391(rectangles);
+            bool result = Problem391Solution.Solve();
             
             //Assert
             Assert.True(result);
@@ -68,16 +77,17 @@ namespace LeetCodeTests
         {
             //Arrange
             int[,] rectangles = new int[,] {
-                {1,1,1,5},
-                {2,1,2,5},
-                {3,1,3,5},
-                {4,1,4,5},
-                {5,1,5,5},
-                {6,1,6,5}
+                {1,1,2,5},
+                {2,1,3,5},
+                {3,1,4,5},
+                {4,1,5,5},
+                {5,1,6,5},
+                {6,1,7,5}
             };
 
             //Act
-            bool result = Problem391.Solve(rectangles);
+            Problem391 Problem391Solution = new Problem391(rectangles);
+            bool result = Problem391Solution.Solve();
 
             //Assert
             Assert.True(result);
@@ -96,7 +106,8 @@ namespace LeetCodeTests
             };
             
             //Act
-            bool result = Problem391.Solve(rectangles);
+            Problem391 Problem391Solution = new Problem391(rectangles);
+            bool result = Problem391Solution.Solve();
 
             //Assert
             Assert.False(result);
@@ -117,7 +128,8 @@ namespace LeetCodeTests
             };
 
             //Act
-            bool result = Problem391.Solve(rectangles);
+            Problem391 Problem391Solution = new Problem391(rectangles);
+            bool result = Problem391Solution.Solve();
 
             //Assert
             Assert.False(result);
@@ -134,7 +146,8 @@ namespace LeetCodeTests
             };
 
             //Act
-            bool result = Problem391.Solve(rectangles);
+            Problem391 Problem391Solution = new Problem391(rectangles);
+            bool result = Problem391Solution.Solve();
 
             //Assert
             Assert.False(result);
@@ -155,7 +168,8 @@ namespace LeetCodeTests
             };
 
             //Act
-            bool result = Problem391.Solve(rectangles);
+            Problem391 Problem391Solution = new Problem391(rectangles);
+            bool result = Problem391Solution.Solve();
 
             //Assert
             Assert.False(result);
@@ -172,7 +186,8 @@ namespace LeetCodeTests
             };
             
             //Act
-            bool result = Problem391.Solve(rectangles);
+            Problem391 Problem391Solution = new Problem391(rectangles);
+            bool result = Problem391Solution.Solve();
 
             //Assert
             Assert.False(result);
@@ -191,7 +206,8 @@ namespace LeetCodeTests
             };
             
             //Act
-            bool result = Problem391.Solve(rectangles);
+            Problem391 Problem391Solution = new Problem391(rectangles);
+            bool result = Problem391Solution.Solve();
 
             //Assert
             Assert.False(result);
@@ -208,7 +224,8 @@ namespace LeetCodeTests
             };
 
             //Act
-            bool result = Problem391.Solve(rectangles);
+            Problem391 Problem391Solution = new Problem391(rectangles);
+            bool result = Problem391Solution.Solve();
 
             //Assert
             Assert.False(result);
@@ -225,7 +242,8 @@ namespace LeetCodeTests
             };
             
             //Act
-            bool result = Problem391.Solve(rectangles);
+            Problem391 Problem391Solution = new Problem391(rectangles);
+            bool result = Problem391Solution.Solve();
 
             //Assert
             Assert.True(result);
@@ -246,7 +264,8 @@ namespace LeetCodeTests
             };
 
             //Act
-            bool result = Problem391.Solve(rectangles);
+            Problem391 Problem391Solution = new Problem391(rectangles);
+            bool result = Problem391Solution.Solve();
 
             //Assert
             Assert.False(result);
@@ -263,7 +282,8 @@ namespace LeetCodeTests
             };
             
             //Act
-            bool result = Problem391.Solve(rectangles);
+            Problem391 Problem391Solution = new Problem391(rectangles);
+            bool result = Problem391Solution.Solve();
 
             //Assert
             Assert.False(result);
@@ -282,7 +302,8 @@ namespace LeetCodeTests
             };
             
             //Act
-            bool result = Problem391.Solve(rectangles);
+            Problem391 Problem391Solution = new Problem391(rectangles);
+            bool result = Problem391Solution.Solve();
 
             //Assert
             Assert.False(result);
@@ -303,7 +324,8 @@ namespace LeetCodeTests
             };
 
             //Act
-            bool result = Problem391.Solve(rectangles);
+            Problem391 Problem391Solution = new Problem391(rectangles);
+            bool result = Problem391Solution.Solve();
 
             //Assert
             Assert.False(result);
@@ -322,7 +344,8 @@ namespace LeetCodeTests
             };
             
             //Act
-            bool result = Problem391.Solve(rectangles);
+            Problem391 Problem391Solution = new Problem391(rectangles);
+            bool result = Problem391Solution.Solve();
 
             //Assert
             Assert.False(result);
@@ -340,7 +363,8 @@ namespace LeetCodeTests
             };
             
             //Act
-            bool result = Problem391.Solve(rectangles);
+            Problem391 Problem391Solution = new Problem391(rectangles);
+            bool result = Problem391Solution.Solve();
 
             //Assert
             Assert.True(result);
@@ -358,7 +382,8 @@ namespace LeetCodeTests
             };
             
             //Act
-            bool result = Problem391.Solve(rectangles);
+            Problem391 Problem391Solution = new Problem391(rectangles);
+            bool result = Problem391Solution.Solve();
 
             //Assert
             Assert.False(result);
@@ -384,7 +409,8 @@ namespace LeetCodeTests
             }
             
             //Act
-            bool result = Problem391.Solve(rectangles);
+            Problem391 Problem391Solution = new Problem391(rectangles);
+            bool result = Problem391Solution.Solve();
 
             //Assert
             Assert.True(result);
@@ -414,7 +440,27 @@ namespace LeetCodeTests
             rectangles[1000000, 3] = 1000001;
 
             //Act
-            bool result = Problem391.Solve(rectangles);
+            Problem391 Problem391Solution = new Problem391(rectangles);
+            bool result = Problem391Solution.Solve();
+
+            //Assert
+            Assert.False(result);
+        }
+
+        [Fact]
+        [Trait("Category", "Area Not Enough")]
+        public void AreaTestFail()
+        {
+            //Arrange
+            int[,] rectangles = new int[,] {
+                {1,1,3,5 },
+                {3,1,4,3 },
+                {2,4,4,5 }
+            };
+
+            //Act
+            Problem391 Problem391Solution = new Problem391(rectangles);
+            bool result = Problem391Solution.Solve();
 
             //Assert
             Assert.False(result);
