@@ -3,9 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCodeTests", "LeetCodeTests\LeetCodeTests.csproj", "{EE5E3EF1-0386-460C-A791-67C9D063F08D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeetCodeTests", "LeetCodeTests\LeetCodeTests.csproj", "{EE5E3EF1-0386-460C-A791-67C9D063F08D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B80CD9C9-E3D8-4CB1-98A3-5F3E95A260DE} = {B80CD9C9-E3D8-4CB1-98A3-5F3E95A260DE}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCodeSolutions", "LCSolutions\LeetCodeSolutions.csproj", "{B80CD9C9-E3D8-4CB1-98A3-5F3E95A260DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeetCodeSolutions", "LCSolutions\LeetCodeSolutions.csproj", "{B80CD9C9-E3D8-4CB1-98A3-5F3E95A260DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
