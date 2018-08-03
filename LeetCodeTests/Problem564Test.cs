@@ -87,21 +87,6 @@ namespace LeetCodeTests
         }
 
         [Fact]
-        [Trait("Category", "Palindrome Tie")]
-        public void PalindromeTie3()
-        {
-            //Arrange
-            string input = "5";
-            string expected = "4";
-
-            //Act
-            string actual = Problem564.NearestPalindromic(input);
-
-            //Assert
-            Assert.Equal(expected, actual);
-        }
-
-        [Fact]
         [Trait("Category", "Target Above")]
         public void PalindromeAbove1()
         {
