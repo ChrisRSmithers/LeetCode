@@ -57,7 +57,7 @@ namespace LeetCodeTests
         {
             //Arrange
             int[] nums = new int[] { 5,6,7,8,9,10,0,1,2,3,4};
-            int expected = 999;
+            int expected = 0;
 
             //Act
             int actual = Problem154.FindMin(nums);
