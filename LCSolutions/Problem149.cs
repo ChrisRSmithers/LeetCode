@@ -10,6 +10,17 @@ namespace LeetCodeSolutions
         public int y;
         public Point() { x = 0; y = 0; }
         public Point(int a, int b) { x = a; y = b; }
+
+        public override bool Equals(object obj)
+        {
+            Point k = (Point) obj;
+            return (k.x == this.x)&&(k.y == this.y);
+        }
+
+        public override int GetHashCode()
+        {
+            return Tuple.Create(x,y).GetHashCode();
+        }
     }
 
 

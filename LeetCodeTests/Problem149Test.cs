@@ -118,5 +118,24 @@ namespace LeetCodeTests
             //Assert
             Assert.Equal(expected, actual);
         }
+
+        [Fact]
+        public static void Temp()
+        {
+            //Arrange
+            Point[] pointArray = new Point[] {
+                new Point(0,0),
+                new Point(0,0),
+                new Point(0,0),
+                new Point(1,1)
+            };
+            int expected = 4;
+
+            //Act
+            int actual = Problem149.MaxPoints(pointArray);
+
+            //Assert
+            Assert.Equal(expected, actual);
+        }
     }
 }
